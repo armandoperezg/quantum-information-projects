@@ -50,15 +50,15 @@ Described in requirements, installation instrutions in installation section belo
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/your-username/quantum-information.git
-cd quantum-information
+git clone https://github.com/your-username/quantum-information-projects.git
+cd 'quantum-information-projects'
 pip install -r requirements.txt
 ```
 
 ### Running the Notebook
 Open the Jupyter Notebook server and navigate to the BB84 notebook:
 ```bash
-jupyter notebook notebooks/bb84_simulation.ipynb
+jupyter notebook notebooks/bb84_protocol.ipynb
 ```
 
 ### Planned Features
