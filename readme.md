@@ -11,6 +11,8 @@ Simulates the BB84 protocol for quantum key distribution, including:
 - Qubit preparation based on Alice's random bits and bases.
 - Measurement by Bob using randomly chosen bases.
 - Key sifting to establish a shared secret key.
+- Quantum Bit Error Rate (QBER) metric
+- Presence of an eavesdropper (Eve) and it's effect on QBER metric
 
 ---
 
@@ -27,7 +29,7 @@ quantum-information/
 │   └── __init__.py                  # Main package initializer
 │
 ├── notebooks/                       # Jupyter notebooks for interactive exploration
-│   └── bb84_simulation.ipynb        # BB84 simulation notebook
+│   └── bb84_protocol.ipynb        # BB84 simulation notebook
 │
 ├── tests/                           # Unit tests for key functionality
 │   └── test_bb84.py                 # Unit tests for the BB84 protocol
@@ -50,21 +52,25 @@ Described in requirements, installation instrutions in installation section belo
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/your-username/quantum-information.git
-cd quantum-information
+git clone https://github.com/armandoperezg/quantum-information-projects
+cd quantum-information-projects
 pip install -r requirements.txt
 ```
 
 ### Running the Notebook
 Open the Jupyter Notebook server and navigate to the BB84 notebook:
 ```bash
-jupyter notebook notebooks/bb84_simulation.ipynb
+jupyter notebook notebooks/bb84_protocol.ipynb
 ```
 
 ### Planned Features
 - Introduce error correction and noise models for QKD.
-- Introduce an eavesdropper (Eve) to QKD simulation
 - Add Grover's and Shor's algorithm simulations.
+- Explore hardware related projects, such as:
+    - Quantum Dot Simulation
+    - Noise and decoherence in quantum systems simulator
+    - Trapped Ion Dynamics
+    - etc.
 - Gradually combine them into larger systems (e.g., a quantum internet with error correction).
 - Develop projects aligned with real-world experiments or research problems
 - Explore Rust-Python integration for high-performance classical tasks, where relevant/needed.
