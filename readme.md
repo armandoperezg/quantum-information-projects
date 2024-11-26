@@ -61,6 +61,7 @@ pip install -r requirements.txt
 Open the Jupyter Notebook server and navigate to the BB84 notebook:
 ```bash
 jupyter notebook notebooks/bb84_protocol.ipynb
+jupyter notebook notebooks/bb84_protocol.ipynb
 ```
 
 ### Planned Features
