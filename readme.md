@@ -71,7 +71,7 @@ jupyter notebook notebooks/bb84_protocol.ipynb
     - Quantum Dot Simulation
     - Noise and decoherence in quantum systems simulator
     - Trapped Ion Dynamics
-    - etc.
+    - etc...
 - Gradually combine them into larger systems (e.g., a quantum internet with error correction).
 - Develop projects aligned with real-world experiments or research problems
 - Explore Rust-Python integration for high-performance classical tasks, where relevant/needed.
