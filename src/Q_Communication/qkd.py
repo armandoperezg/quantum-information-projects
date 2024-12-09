@@ -1,5 +1,9 @@
 """
-This library
+This library contains all of the functions used in the bb84_protocol.ipynb jupyter notebook in the notebooks folder. 
+
+
+Some possible optimizations are: 
+- In the function run_circuits, the circuits for each generated combination of bases and qubits are transpiled, simulated and measured. When the number of bits sent is large, it is likely that a lot of the individually prepared circuits are identical to another previously prepared. Thus, the program could potentially store the permutations, or even store this before the program is ran, to significantly reduce computational complexity. This would avoid unnecessary transpiling, simulating, and perhaps measurement of circuits, which should be the highest contributor of execution time, and thus could represent a bottleneck. 
 """
 
 
