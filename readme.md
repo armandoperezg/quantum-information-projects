@@ -1,4 +1,4 @@
-# Quantum Information Projects
+# Quantum Information Portfolio
 
 This repository showcases personal projects in quantum computing and quantum information, developed using Python, and Qiskit. It explores foundational quantum protocols, algorithms, and related computational tasks, with an emphasis on quantum key distribution (QKD) and quantum algorithms.
 
@@ -11,9 +11,18 @@ Simulates the BB84 protocol for quantum key distribution, including:
 - Qubit preparation based on Alice's random bits and bases.
 - Measurement by Bob using randomly chosen bases.
 - Key sifting to establish a shared secret key.
-- Quantum Bit Error Rate (QBER) metric
-- Presence of an eavesdropper (Eve) and it's effect on QBER metric
+- Quantum Bit Error Rate (QBER) metric.
+- Analysis of the presence of an eavesdropper (Eve) and its effect on QBER.
 
+### 2. Deutsch's Algorithm
+Implements Deutsch's algorithm using Qiskit, with detailed exploration of:
+- Classical and Quantum Oracles.
+- Phase oracles.
+- Quantum advantage.
+- etc.
+
+### 3. Superdense Coding
+Explores superdense coding through implementation and theoretical analysis.
 ---
 
 ## Repository Structure
@@ -23,13 +32,17 @@ Most folders are currently empty, but as the project develops, the structure wil
 quantum-information/
 │
 ├── src/                             # Python source code
-│   ├── qkd/                         # Quantum Key Distribution modules
-│   │   ├── bb84.py                  # Functions for BB84 protocol
+│   ├── Q_Communication/             # Quantum Key Distribution modules
+│   │   ├── qkd_errors.py            # Functions for BB84 protocol
+│   │   ├── qkd.py                   # Functions for BB84 protocol
 │   │   └── __init__.py              # Module initializer
 │   └── __init__.py                  # Main package initializer
 │
 ├── notebooks/                       # Jupyter notebooks for interactive exploration
-│   └── bb84_protocol.ipynb        # BB84 simulation notebook
+│   ├── bb84_protocol.ipynb          # BB84 simulation notebook
+│   ├── superdense_coding.ipynb      # Superdense coding exploration
+│   └── q_algorithms/                # Notebooks exploring quantum algorithms
+│       ├── deutsch.ipynb            # Deutsch algorithm implementation
 │
 ├── tests/                           # Unit tests for key functionality
 │   └── test_bb84.py                 # Unit tests for the BB84 protocol
@@ -46,7 +59,7 @@ quantum-information/
 ## Installation and Usage
 
 ### Prerequisites
-Described in requirements, installation instrutions in installation section below
+Described in requirements, installation instructions in installation section below
 
 ### Installation
 Clone the repository and install dependencies:
@@ -65,8 +78,9 @@ jupyter notebook notebooks/bb84_protocol.ipynb
 ```
 
 ### Planned Features
+- Add Quantum Fourier Transform, Grover's and Shor's algorithm simulations.
+- Explore Quantum Error Correction
 - Introduce error correction and noise models for QKD.
-- Add Grover's and Shor's algorithm simulations.
 - Explore hardware related projects, such as:
     - Quantum Dot Simulation
     - Noise and decoherence in quantum systems simulator
@@ -81,6 +95,17 @@ This repository is primarily a personal portfolio for academic and professional 
 
 Feel free to email me at armando.perezg05@outlook.com if you have any questions or would like to discuss your ideas before contributing
 
+## Recent Updates
 
-### License
+- **Added Features**:
+  - Deutsch's Algorithm implementation.
+  - Superdense Coding exploration.
+- **Utility Functions**:
+  - `transpile_qc`: Transpiles a quantum circuit for a specified backend.
+  - `run_circuit`: Executes a quantum circuit on a specified backend.
+  - `create_noise_model`: Simulates depolarizing error based on error probabilities of single-qubit gates (`p_depol`).
+
+
+
+## License
 The project is licensed under the MIT License. See LICENSE file for details.
