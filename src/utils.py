@@ -12,7 +12,7 @@ def create_noise_model(p_depol=0.01):
       will result in a completely random state.
 
     Possible improvements you might add over time:
-    1. Add depolarizing errors for two-qubit gates.
+    1. Add depolarizing errors for two or more qubit gates.
     2. Introduce readout (measurement) errors.
     3. Add amplitude damping or phase damping errors.
     4. Create custom gate-specific or qubit-specific error models.
