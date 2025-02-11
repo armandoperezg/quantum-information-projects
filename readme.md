@@ -23,6 +23,9 @@ Implements Deutsch's algorithm using Qiskit, with detailed exploration of:
 
 ### 3. Superdense Coding
 Explores superdense coding through implementation and theoretical analysis.
+
+### 4. Quantum Fourier Transform
+Implementation of QFT and inverse QFT
 ---
 
 ## Repository Structure
